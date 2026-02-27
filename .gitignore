@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# ML
+mlruns/
+mlartifacts/
+models/
+models - Copy/
+
+# Env
+.env
+
+# Ignore raw data
+data/raw/
+
+# Node
+node_modules/
+dist/
+build/
+
+# Logs
+*.log
+*.txt
