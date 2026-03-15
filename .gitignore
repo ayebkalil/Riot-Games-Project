@@ -26,3 +26,6 @@ build/
 # Logs
 *.log
 *.txt
+# Exclude oversized model binaries from GitHub push
+models/4_match_outcome_predictor/models/cascade_stage2_cascaded_model.pkl
+models/4_match_outcome_predictor/models/cascade_stage2_post_baseline_model.pkl
