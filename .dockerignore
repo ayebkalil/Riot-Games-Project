@@ -1,0 +1,19 @@
+.git
+.gitignore
+.venv
+__pycache__
+.pytest_cache
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.tmp
+*.ipynb_checkpoints
+
+frontend/hextech-insights (1)/node_modules
+frontend/hextech-insights (1)/dist
+
+mlruns
+mlartifacts
+models - Copy
+opgg/debug
