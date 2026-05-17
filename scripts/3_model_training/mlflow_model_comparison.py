@@ -162,8 +162,11 @@ def export_comparison_json():
 
 
 if __name__ == "__main__":
-    # Set MLflow tracking URI (local by default)
-    mlflow.set_tracking_uri("http://localhost:5000")
+    # Set MLflow tracking URI to the local `mlruns` folder so this script can
+    # read experiments without requiring a running MLflow server.
+    local_mlrun_path = Path.cwd() / "mlruns"
+    # Use an absolute file URI with forward slashes to be compatible on Windows
+    mlflow.set_tracking_uri(f"file:///{local_mlrun_path.as_posix()}")
     
     print("\n🔍 Fetching model performance from MLflow...")
     print("(Make sure 'mlflow ui --port 5000' is running)\n")

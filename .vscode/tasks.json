@@ -1,0 +1,58 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "start-backend",
+			"type": "shell",
+			"command": ".venv\\Scripts\\python.exe",
+			"args": [
+				"-m",
+				"uvicorn",
+				"api.main:app",
+				"--host",
+				"127.0.0.1",
+				"--port",
+				"8001"
+			],
+			"isBackground": true,
+			"group": "build"
+		},
+		{
+			"label": "start-frontend",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"--prefix",
+				"frontend/hextech-insights (1)",
+				"run",
+				"dev",
+				"--",
+				"--host",
+				"127.0.0.1",
+				"--port",
+				"5173"
+			],
+			"isBackground": true,
+			"group": "build"
+		},
+		{
+			"label": "backend-uvicorn",
+			"type": "shell",
+			"command": ".venv\\Scripts\\python.exe",
+			"args": [
+				"-m",
+				"uvicorn",
+				"api.main:app",
+				"--host",
+				"127.0.0.1",
+				"--port",
+				"8001"
+			],
+			"isBackground": true,
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": "build"
+		}
+	]
+}

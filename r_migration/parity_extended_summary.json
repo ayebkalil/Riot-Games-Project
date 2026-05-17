@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-05-14 10:32:12.936637",
+  "limit": 30,
+  "rank": {
+    "endpoint": "rank",
+    "rows": 30,
+    "class_accuracy": 0.963,
+    "output_csv": "r_migration/parity_rank_results.csv"
+  },
+  "progression": {
+    "endpoint": "progression",
+    "rows": 30,
+    "mae": 0.0373,
+    "rmse": 0.0474,
+    "output_csv": "r_migration/parity_progression_results.csv"
+  },
+  "smurf": {
+    "endpoint": "smurf",
+    "rows": 30,
+    "anomaly_accuracy": 1,
+    "output_csv": "r_migration/parity_smurf_results.csv"
+  }
+}

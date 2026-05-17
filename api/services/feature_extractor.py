@@ -238,7 +238,7 @@ class FeatureExtractor:
             'epicMonsterSteals': avg_epic_monster_steals,
             'objectivesStolen': avg_objectives_stolen,
             'bountyGold': avg_bounty_gold,
-            'champion_pool_size': champion_pool_size_feature,
+            'champion_pool_size': float(champ_pool_size),
             'role_consistency': role_consistency,
             'total_games': float(total_games),
             'matches_analyzed': float(len(stats_list)),
